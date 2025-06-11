@@ -8,8 +8,6 @@ function App() {
   return (
     <div className='main-container'>
       < Select />
-      < Counter />
-      < Modal />
     </div>
   )
    

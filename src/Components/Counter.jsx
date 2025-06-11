@@ -24,9 +24,11 @@ export const Counter = () => {
   return (
     <div className="counter-container">
       <p className={`number ${colorClass}`}>{value}</p>
-      <button onClick={() => setValue(value + 1)}>increase</button>
-      <button onClick={() => setValue(value - 1)}>decrease</button>
-      <button onClick={() => setValue((value = 0))}>restart</button>
+      <div className="buttons-container">
+      <button className="button-counter" onClick={() => setValue(value + 1)}>increase</button>
+      <button className="button-counter" onClick={() => setValue(value - 1)}>decrease</button>
+      <button className="button-counter" onClick={() => setValue((value = 0))}>restart</button>
+      </div>
     </div>
   );
 };
