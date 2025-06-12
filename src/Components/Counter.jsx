@@ -17,17 +17,25 @@ export const Counter = () => {
     return valueClass;
   }
 
-
-
   const colorClass = changeColor(value);
 
   return (
     <div className="counter-container">
+      <h2 className="component-title">Counter</h2>
       <p className={`number ${colorClass}`}>{value}</p>
       <div className="buttons-container">
-      <button className="button-counter" onClick={() => setValue(value + 1)}>increase</button>
-      <button className="button-counter" onClick={() => setValue(value - 1)}>decrease</button>
-      <button className="button-counter" onClick={() => setValue((value = 0))}>restart</button>
+        <button className="button-counter" onClick={() => setValue(value + 1)}>
+          increase
+        </button>
+        <button className="button-counter" onClick={() => setValue(value - 1)}>
+          decrease
+        </button>
+        <button
+          className="button-counter"
+          onClick={() => setValue((value = 0))}
+        >
+          restart
+        </button>
       </div>
     </div>
   );

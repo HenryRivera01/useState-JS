@@ -7,7 +7,7 @@ export const Select = () => {
 
   return (
     <section className="select-container">
-        <h2 className="title-select">Select the component</h2>
+      <h2 className="title-select">Select the component</h2>
       <select
         name="select"
         id="select"
